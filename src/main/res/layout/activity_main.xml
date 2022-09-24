@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cacae8"
+    tools:context=".Activities.MainActivity">
+    <RelativeLayout
+        android:layout_above="@+id/middle_layout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+
+
+        <TextView
+            android:id="@+id/ring"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignLeft="@+id/text_clock"
+            android:background="@drawable/icon_notify_white"
+            android:layout_above="@+id/text_clock"
+            android:layout_marginBottom="5dp"/>
+
+        <TextClock
+            android:id="@+id/text_clock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"
+            android:format24Hour="HH:mm\ndd.MM.yyyy EEEE"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_alignLeft="@+id/text_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_clock"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:text="Welcome ! Start Learning ! "/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_data_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:background="@drawable/dialog_bg_nocorner">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_marginLeft="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/icon_user_title"/>
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello Ruby!"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/tv_user_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_user_name"
+            android:layout_marginLeft="80dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="17dp"
+            android:text="Your Points : 300" />
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:id="@+id/btn_checkin"
+            android:text="daily\nsign-in"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:textSize="10dp"
+            android:background="#cacae8"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/middle_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true">
+
+
+        <ImageView
+            android:id="@+id/iv_mission"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/daily_mission"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/icon_quiz"/>
+
+        <Button
+            android:id="@+id/daily_mission"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/transparent"
+            android:text="Mission"
+            android:textSize="12dp" />
+        <ImageView
+            android:id="@+id/iv_pk"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/iv_mission"
+            android:layout_below="@+id/iv_mission"
+            android:src="@drawable/icon_pk"/>
+
+        <Button
+            android:id="@+id/competition"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/daily_mission"
+            android:layout_alignLeft="@+id/daily_mission"
+            android:layout_alignRight="@+id/daily_mission"
+            android:background="@drawable/transparent"
+            android:text="PK"
+            android:textSize="12dp"/>
+
+        <ImageView
+            android:id="@+id/iv_statistics"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/iv_mission"
+            android:layout_below="@+id/iv_pk"
+            android:src="@drawable/icon_statistics"/>
+
+        <Button
+            android:id="@+id/statistics"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/competition"
+            android:layout_alignLeft="@+id/competition"
+            android:layout_alignRight="@+id/daily_mission"
+            android:background="@drawable/transparent"
+            android:text="Question Book"
+            android:textSize="12dp"/>
+        <ImageView
+            android:id="@+id/iv_Timer"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/iv_mission"
+            android:layout_below="@+id/iv_statistics"
+            android:src="@drawable/icon_timer"/>
+        <Button
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/statistics"
+            android:layout_alignLeft="@+id/competition"
+            android:layout_alignRight="@+id/daily_mission"
+            android:background="@drawable/transparent"
+            android:text="Timer"
+            android:textSize="12dp"/>
+
+        <ImageView
+            android:id="@+id/iv_achievement"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/iv_mission"
+            android:layout_below="@+id/iv_Timer"
+            android:src="@drawable/icon_achievement"/>
+        <Button
+            android:id="@+id/achievement"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/timer"
+            android:layout_alignLeft="@+id/competition"
+            android:layout_alignRight="@+id/daily_mission"
+            android:background="@drawable/transparent"
+            android:text="Achievement"
+            android:textSize="12dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

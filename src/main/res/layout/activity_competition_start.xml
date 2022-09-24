@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorLightPurpleBlue">
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_competition_start"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/dialog_bg_nocorner">
+
+            <Button
+                android:id="@+id/btn_game_start"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/competition_start"
+                android:background="@drawable/icon_vg_nocolor"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/competition_start"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:textColor="@color/colorBlack"
+                android:text="Click to Start Game"
+                android:textSize="13dp"/>
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/competition_rule_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Competition Rules"
+            android:textSize="20dp"
+            android:textColor="@color/colorBlack" />
+        <TextView
+            android:id="@+id/competition_rule_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/competition_rule_title"
+            android:layout_margin="10dp"
+            android:textSize="15dp"
+            android:text="There are six questions in total, and the answer time for each question is twenty seconds. \nPlayers answer questions alternately and the one with the highest score wins. \nThe red side is the first move, and the blue side is the back move."/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/competition_start_back"
+        android:text="Back"
+        android:background="@color/colorWhite"/>
+
+
+</LinearLayout>

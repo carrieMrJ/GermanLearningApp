@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorLightPurpleBlue"
+                android:id="@+id/btn_statistics_share"
+                android:layout_margin="10dp"
+                android:text="Share"
+                android:textColor="@color/colorWhite"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_statistics_curIndex"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorGreyPurple"
+                    android:text="1"
+                    android:textSize="22dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_statistics_total"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/daily_mission_size"
+                    android:layout_toRightOf="@+id/tv_statistics_curIndex"
+                    android:textSize="25dp"/>
+                <TextView
+                    android:id="@+id/tv_statistics_question"
+                    android:layout_toRightOf="@+id/tv_statistics_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:textSize="19dp"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/statistics_titleA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="A."
+                        android:textSize="20dp"
+                        android:textColor="@color/colorBlack"
+                        />
+                    <TextView
+                        android:id="@+id/statistics_A"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/statistics_titleA"
+                        android:text="abcdefghigklmn"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="17dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/statistics_titleB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="B."
+                        android:textSize="20dp"
+                        android:textColor="@color/colorBlack"/>
+                    <TextView
+                        android:id="@+id/statistics_B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/statistics_titleB"
+                        android:text="abcdefghigklmnabcdefghigklmnopqrstuv"
+                        android:layout_margin="10dp"
+                        android:textSize="17dp"
+                        android:textColor="@color/colorBlack"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/statistics_titleC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="C."
+                        android:textSize="20dp"
+                        android:textColor="@color/colorBlack"/>
+                    <TextView
+                        android:id="@+id/statistics_C"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/statistics_titleC"
+                        android:text="abcdefghigklmnabcdefghigklmnopqrstuv"
+                        android:layout_margin="10dp"
+                        android:textSize="17dp"
+                        android:textColor="@color/colorBlack"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/statistics_titleD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="D."
+                        android:textSize="20dp"
+                        android:textColor="@color/colorBlack"/>
+
+                    <TextView
+                        android:id="@+id/statistics_D"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/statistics_titleD"
+                        android:text="abcdefghigklmnabcdefghigklmnopqrstuv"
+                        android:layout_margin="10dp"
+                        android:textSize="17dp"
+                        android:textColor="@color/colorBlack"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_statistics_pre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:text="Last"
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/colorGreyPurple"/>
+                <Button
+                    android:id="@+id/btn_statistics_suc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/btn_statistics_pre"
+                    android:layout_marginLeft="40dp"
+                    android:text="Next"
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/colorGreyPurple"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EasyLearn</string>
+    <string name="SignOut">SignOut</string>
+    <string name="daily_mission_size">/5</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+</resources>

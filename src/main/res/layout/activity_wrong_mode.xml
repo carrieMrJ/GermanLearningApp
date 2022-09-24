@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/toolbar_wrong_mode"/>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wrong_Mode_current"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorGreyPurple"
+                    android:text="1"
+                    android:textSize="22dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wrong_Mode_total"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/daily_mission_size"
+                    android:layout_toRightOf="@+id/wrong_Mode_current"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:id="@+id/wrong_Mode_question"
+                    android:layout_toRightOf="@+id/wrong_Mode_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:padding="10dp"
+                    android:textSize="27dp"/>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/wrong_Mode_titleA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="A."
+                        android:textSize="25dp"
+                        android:textColor="@color/colorBlack"
+                        />
+                    <TextView
+                        android:id="@+id/wrong_Mode_A"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/wrong_Mode_titleA"
+                        android:text="abcdefghigklmn"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="22dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/wrong_Mode_titleB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="B."
+                        android:textSize="25dp"
+                        android:textColor="@color/colorBlack"/>
+                    <TextView
+                        android:id="@+id/wrong_Mode_B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/wrong_Mode_titleB"
+                        android:text="abcdefghigklmnabcdefghigklmnopqrstuv"
+                        android:layout_margin="10dp"
+                        android:textSize="22dp"
+                        android:textColor="@color/colorBlack"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/wrong_Mode_titleC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="C."
+                        android:textSize="25dp"
+                        android:textColor="@color/colorBlack"/>
+                    <TextView
+                        android:id="@+id/wrong_Mode_C"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/wrong_Mode_titleC"
+                        android:text="abcdefghigklmnabcdefghigklmnopqrstuv"
+                        android:layout_margin="10dp"
+                        android:textSize="22dp"
+                        android:textColor="@color/colorBlack"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/wrong_Mode_titleD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="D."
+                        android:textSize="25dp"
+                        android:textColor="@color/colorBlack"/>
+
+                    <TextView
+                        android:id="@+id/wrong_Mode_D"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/wrong_Mode_titleD"
+                        android:text="abcdefghigklmnabcdefghigklmnopqrstuv"
+                        android:layout_margin="10dp"
+                        android:textSize="22dp"
+                        android:textColor="@color/colorBlack"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/wrong_Mode_btn_pre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:text="Last"
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/colorGreyPurple"/>
+                <Button
+                    android:id="@+id/wrong_Mode_btn_suc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/wrong_Mode_btn_pre"
+                    android:layout_marginLeft="40dp"
+                    android:text="Next"
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/colorGreyPurple"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/tv_wrong_Mode_pointAct"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="Check your Points"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp"
+            android:background="@color/colorGreyPurple"
+            />
+
+    </RelativeLayout>-->
+
+</LinearLayout>

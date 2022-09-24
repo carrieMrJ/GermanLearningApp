@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colorLightRed">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <Button
+                android:id="@+id/btn_red_optionA"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/icon_square_select"
+                android:layout_centerHorizontal="true"
+                android:text="A"
+                android:textSize="25dp"
+                />
+            <Button
+                android:id="@+id/btn_red_optionB"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/icon_square_select"
+                android:layout_below="@id/btn_red_optionA"
+                android:layout_alignLeft="@id/btn_red_optionA"
+                android:text="B"
+                android:textSize="25dp"
+                />
+            <Button
+                android:id="@+id/btn_red_optionC"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/icon_square_select"
+                android:layout_below="@id/btn_red_optionB"
+                android:layout_alignLeft="@id/btn_red_optionB"
+                android:text="C"
+                android:textSize="25dp"
+                />
+            <Button
+                android:id="@+id/btn_red_optionD"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/icon_square_select"
+                android:layout_below="@id/btn_red_optionC"
+                android:layout_alignLeft="@id/btn_red_optionC"
+                android:text="D"
+                android:textSize="25dp"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="7dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        >
+        <include
+            android:id="@+id/competition_toolbar"
+            layout="@layout/toolbar_competition"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_competition_curIndex"
+                android:layout_width="35dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/icon_textsqaure"
+                android:gravity="center"
+                android:text="6"
+                android:textColor="@color/colorBlack"
+                android:textSize="17dp" />
+            <TextView
+                android:id="@+id/tv_competition_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_competition_curIndex"
+                android:layout_margin="5dp"
+                android:text="How old are you ?"
+                android:textColor="@color/colorBlack"
+                android:textSize="20dp"
+                />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/competition_titleA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:text="A."
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17dp"
+                    />
+                <TextView
+                    android:id="@+id/competition_A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/competition_titleA"
+                    android:text="abcdefghigklmn"
+                    android:layout_margin="6dp"
+                    android:textSize="17dp"
+                    android:textColor="@color/colorBlack" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/competition_titleB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:textSize="17dp"
+                    android:text="B."
+                    android:textColor="@color/colorBlack"/>
+                <TextView
+                    android:id="@+id/competition_B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/competition_titleB"
+                    android:text="abcdefghigklmnabcdefghigklmnopqrstuv"
+                    android:layout_margin="6dp"
+                    android:textSize="17dp"
+                    android:textColor="@color/colorBlack"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/competition_titleC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:textSize="17dp"
+                    android:text="C."
+                    android:textColor="@color/colorBlack"/>
+                <TextView
+                    android:id="@+id/competition_C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/competition_titleC"
+                    android:text="abcdefghigklmnabcdefghigklmnopqrstuv"
+                    android:layout_margin="6dp"
+                    android:textSize="17dp"
+                    android:textColor="@color/colorBlack"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/competition_titleD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:textSize="17dp"
+                    android:text="D."
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:id="@+id/competition_D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/competition_titleD"
+                    android:text="abcdefghigklmnabcdefghigklmnopqrstuv"
+                    android:layout_margin="6dp"
+                    android:textSize="17dp"
+                    android:textColor="@color/colorBlack"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        
+
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colorSkyBlue">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <Button
+                android:id="@+id/btn_blue_optionA"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/icon_square_select"
+                android:layout_centerHorizontal="true"
+                android:text="A"
+                android:textSize="25dp"
+                />
+            <Button
+                android:id="@+id/btn_blue_optionB"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/icon_square_select"
+                android:layout_below="@id/btn_blue_optionA"
+                android:layout_alignLeft="@id/btn_blue_optionA"
+                android:text="B"
+                android:textSize="25dp"
+                />
+            <Button
+                android:id="@+id/btn_blue_optionC"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/icon_square_select"
+                android:layout_below="@id/btn_blue_optionB"
+                android:layout_alignLeft="@id/btn_blue_optionB"
+                android:text="C"
+                android:textSize="25dp"
+                />
+            <Button
+                android:id="@+id/btn_blue_optionD"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/icon_square_select"
+                android:layout_below="@id/btn_blue_optionC"
+                android:layout_alignLeft="@id/btn_blue_optionC"
+                android:text="D"
+                android:textSize="25dp"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
